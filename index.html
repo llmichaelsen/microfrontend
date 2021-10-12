@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
+        <title>Micro Frontends</title>
+        <base href="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+        <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+        <style>html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}</style>
+    </head>
+    <body>
+        
+        <header-app></header-app>
+        <script src="./dist/headerApp/elements/headerApp-elements-es2015.js"></script>
+        
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+            <div class="w3-row">
+                <side-app></side-app>
+                <script src="./dist/sideApp/elements/sideApp-elements-es2015.js"></script>
+
+                <main-app></main-app>
+                <script src="./dist/mainApp/elements/mainApp-elements-es2015.js"></script>
+
+                <sub-app></sub-app>
+                <script src="./dist/subApp/elements/subApp-elements-es2015.js"></script>                
+            </div>
+        </div>
+
+        <footer-app></footer-app>
+        <script src="./dist/footerApp/elements/footerApp-elements-es2015.js"></script>
+    </body>
+</html>
